@@ -17,6 +17,13 @@ class Loop < Formula
       url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-darwin-arm64.tar.gz"
       sha256 "3d867632a37016ebb7e89d224dd3c21ba84e955457a25321abf24c8bbbb2fb12"
     end
+    on_intel do
+      odie <<~EOS
+        loop has no prebuilt Intel-mac (x86_64) binary yet.
+        Install it directly instead:
+          curl -fsSL https://raw.githubusercontent.com/notshekhar/loop/main/install.sh | bash
+      EOS
+    end
   end
 
   on_linux do
