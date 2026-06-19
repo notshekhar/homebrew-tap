@@ -23,11 +23,18 @@ Both `loop` and `agent` are placed on your `PATH`.
 | Platform | Arch | Bottled |
 | --- | --- | --- |
 | macOS | Apple Silicon (`arm64`) | ✅ |
-| macOS | Intel (`x64`) | ✅ from v0.5.6+ |
+| macOS | Intel (`x64`) | ❌ — use the installer below |
 | Linux | `x64` | ✅ |
 | Linux | `arm64` | ✅ |
 
-Windows isn't served via Homebrew — use the [PowerShell installer](https://github.com/notshekhar/loop#install).
+**Intel macs:** there's no prebuilt x86_64 bottle yet, so `brew install` exits with a
+pointer to the direct installer:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/notshekhar/loop/main/install.sh | bash
+```
+
+**Windows** isn't served via Homebrew — use the [PowerShell installer](https://github.com/notshekhar/loop#install).
 
 ## How this stays current
 
