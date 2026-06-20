@@ -9,31 +9,28 @@
 class Loop < Formula
   desc "Terminal coding agent — multi-provider, fast, native TUI"
   homepage "https://github.com/notshekhar/loop"
-  version "0.5.8"
+  version "0.5.9"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-darwin-arm64.tar.gz"
-      sha256 "cc4ef799ddaf1fa6ea7bfe89bb004ceb9753025272b02a12803325b8c990599f"
+      sha256 "2c0bdac92ec0b06531e0b5a5aa5fd6c0fed8c6da1fbfb5abe4ba0fa6be155370"
     end
     on_intel do
-      odie <<~EOS
-        loop has no prebuilt Intel-mac (x86_64) binary yet.
-        Install it directly instead:
-          curl -fsSL https://raw.githubusercontent.com/notshekhar/loop/main/install.sh | bash
-      EOS
+      url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-darwin-x64.tar.gz"
+      sha256 "76bfa1525b441b66cd513a679fe46224791fd1d9e8c4124eedba212778065ee7"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-linux-arm64.tar.gz"
-      sha256 "f7b0ea572fc6abf7d0e224775466f1a1a2ee79ec0ccdd2a7f5e9f5b236a8a7cd"
+      sha256 "c19f101fcec9bbf7883d2203e2294e0c59d7f3d35a7dbfaa432fb49859e2d021"
     end
     on_intel do
       url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-linux-x64.tar.gz"
-      sha256 "547f0d88192358a2ee69979007a9bd4de30f16db34e1d5c7a949f26867867be8"
+      sha256 "fc8a6d4e2b72fe0d9cb1fa05295645677c74f788208b4dbd9ffdbbe041396b45"
     end
   end
 
