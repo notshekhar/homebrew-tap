@@ -9,13 +9,13 @@
 class Loop < Formula
   desc "Terminal coding agent — multi-provider, fast, native TUI"
   homepage "https://github.com/notshekhar/loop"
-  version "0.5.7"
+  version "0.5.8"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-darwin-arm64.tar.gz"
-      sha256 "c6e499355a3b38e952bb2bfc68ea7621c2878e1faaa10ef155a2dc226b127f4f"
+      sha256 "cc4ef799ddaf1fa6ea7bfe89bb004ceb9753025272b02a12803325b8c990599f"
     end
     on_intel do
       odie <<~EOS
@@ -29,11 +29,11 @@ class Loop < Formula
   on_linux do
     on_arm do
       url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-linux-arm64.tar.gz"
-      sha256 "ad9699d446dd9a12e2ab85db2556cac4e143caae34db7cdd5e20956668cee0b4"
+      sha256 "f7b0ea572fc6abf7d0e224775466f1a1a2ee79ec0ccdd2a7f5e9f5b236a8a7cd"
     end
     on_intel do
       url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-linux-x64.tar.gz"
-      sha256 "ef886053dc259f1872f05a4faee99b46924b013a20fed90791e4b8f60e928bfd"
+      sha256 "547f0d88192358a2ee69979007a9bd4de30f16db34e1d5c7a949f26867867be8"
     end
   end
 
