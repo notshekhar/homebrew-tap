@@ -9,28 +9,28 @@
 class Loop < Formula
   desc "Terminal coding agent — multi-provider, fast, native TUI"
   homepage "https://github.com/notshekhar/loop"
-  version "0.7.16"
+  version "0.7.17"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-darwin-arm64.tar.gz"
-      sha256 "e84ce538dbc981515c371e0c585b5f43e19128134156c119a15e29b052fca65f"
+      sha256 "b552d1e44cec649c232162b91152d4ee68f350ce6a560afe5a52d8b0fdaf06d6"
     end
     on_intel do
       url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-darwin-x64.tar.gz"
-      sha256 "d742c10acda504db27e649f4c42af422687b003927216c8cf5c5c0da795f48af"
+      sha256 "0ee7416a9848c9d3e32c571f3a4af8ac7c9453b11ff6881e9ffc03fbd98fcf19"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-linux-arm64.tar.gz"
-      sha256 "37d60e31160e0a830b7ac0da6182f6bff0a3dd1654545e814e9cf1958b2db0ef"
+      sha256 "ff442f9a743e6acd8bf6d72db5a5e5366a3b324238799b893a62fd18acd1c11c"
     end
     on_intel do
       url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-linux-x64.tar.gz"
-      sha256 "3767777ea66e4d39c0722a6a79b6b4c88cbf8e50ff5526fb890dbd0350c7bd64"
+      sha256 "993d2e5d0be72042d5c7f29649b2998b43355e6c286460c0cabf6031bb55006d"
     end
   end
 
