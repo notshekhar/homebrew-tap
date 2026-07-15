@@ -15,22 +15,22 @@ class Loop < Formula
   on_macos do
     on_arm do
       url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-darwin-arm64.tar.gz"
-      sha256 "1da3c8ef47e7a886766ea6f5214c21c6857f6a0d0421ae449b3740b02a6a0b46"
+      sha256 "5ea03374c1a7af129787286d222eff12a5f4ab5ba717247acded39c02c9d76b2"
     end
     on_intel do
       url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-darwin-x64.tar.gz"
-      sha256 "fdb0c429b9e087b28247dd5ca68a47a42c362955df9058fb3d3b837c132b460e"
+      sha256 "3999f873dfd49fd005cc02dec7a79c497b769878834630401ef2b16d12ab9df6"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-linux-arm64.tar.gz"
-      sha256 "63ff829671063f6da81da715eeea82a67628385f1a0572eedcb3584803539a69"
+      sha256 "b682c018a19b11fb4ff0839cfa757c11fc6a02c71038a902dbfff5a590a0bc0c"
     end
     on_intel do
       url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-linux-x64.tar.gz"
-      sha256 "a6bd8f6dcdd290e53b8d3692e101096ab13ac4264140d15b4fe2bcdc156a663d"
+      sha256 "eb71e1b9dbf7848e69cbf87cde9fbe82826b52298befbdee7b5703f20d635d9e"
     end
   end
 
