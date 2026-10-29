@@ -18,11 +18,8 @@ class Loop < Formula
       sha256 "08497d480557ad52fbb51b986c62923a9071c8e47355bc2c40a1801706f87b9c"
     end
     on_intel do
-      odie <<~EOS
-        loop has no prebuilt Intel-mac (x86_64) binary yet.
-        Install it directly instead:
-          curl -fsSL https://raw.githubusercontent.com/notshekhar/loop/main/install.sh | bash
-      EOS
+      url "https://github.com/notshekhar/loop/releases/download/v#{version}/loop-darwin-x64.tar.gz"
+      sha256 "aef340f1deb8e576759c7d5753b0310863fc9320d8bf4e8b34fa4c7d1c973738"
     end
   end
 
